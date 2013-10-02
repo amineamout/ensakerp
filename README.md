@@ -35,7 +35,7 @@ bzr branch lp:openerp-web/7.0 web
 
 vi start
 
-#!/bin/bash
+\#!/bin/bash
 ./server/openerp-server --xmlrpc-port=38550 --netrpc-port=40070 --addons-path=/opt/openerp/addons,/opt/openerp/web/addons $1 $2 $3 $4 $5 &
 
 ./server/openerp-server -h
