@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="ecole_tree_view">
+			<field name="name">ecole.tree</field>
+			<field name="model">ecole</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Ecole">
+					<field name="nom"></field>
+					<field name="type"></field>
+					<field name="ville"></field>
+					<field name="tel"></field>
+					<field name="ecole_annee"></field>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="ecole_form_view">
+			<field name="name">ecole.form</field>
+			<field name="model">ecole</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Ecole">
+					<field name="nom"></field>
+					<field name="type"></field>
+					<field name="ville"></field>
+					<field name="tel"></field>
+					<field name="ecole_annee"></field>
+				</form>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="action_ecole_form">
+			<field name="name">ecole</field>
+			<field name="res_model">ecole</field>
+
+		</record>
+		<menuitem id="menu_ecole_main" name="Module ENSAK demo"/>
+		<menuitem id="menu_ecole" parent="menu_ecole_main" name="Gestion des Ecoles"/>
+		<menuitem id="menu_ecole_create" name="Ecoles" parent="menu_ecole" action="action_ecole_form"/>
+	</data>
+</openerp>
