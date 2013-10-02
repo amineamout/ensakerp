@@ -2,6 +2,8 @@ ensakerp
 ========
 
 Exemple très basic d'un module sur openERP - démonstration ENSAK
+
+PDF Mini Doc : https://www.openerp.com/files/memento/OpenERP_Technical_Memento_latest.pdf
 ====
 
 Étapes pré-installation + installation OpenERP & PostgreSQL
